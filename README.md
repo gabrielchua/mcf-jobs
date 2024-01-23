@@ -22,7 +22,7 @@ pip install requests tqdm
 ```
 
 ## Usage
-To use the script, navigate to the directory containing pull_mcf_jobs.py and run it from the command line. You need to specify the number of job postings you want to scrape using the -n argument.
+To use the script, navigate to the directory containing `pull_mcf_jobs.py` and run it from the command line. You need to specify the number of job postings you want to scrape using the -n argument.
 
 ```bash
 python pull_mcf_jobs.py -n <number_of_jobs_to_scrape>
@@ -40,3 +40,12 @@ If you need to see usage instructions, run:
 ```bash
 python pull_mcf_jobs.py -h
 ```
+
+## Output
+The script outputs the scraped data to a CSV file named mcf_jobs.csv in the current directory.
+
+## Note
+This script adds a delay between requests to the API to avoid hitting the rate limiter.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
