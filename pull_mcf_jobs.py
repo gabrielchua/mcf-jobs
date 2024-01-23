@@ -45,7 +45,7 @@ def scrape_job_postings(total_count: int) -> List[Dict]:
         response.raise_for_status()
         data_page = response.json()['results']
         all_data.extend(data_page)
-        time.sleep(1)  # Simulating a delay for demonstration purposes
+        time.sleep(1)  # Simulating a delay to avoid ratelimiting
 
     return all_data
 
